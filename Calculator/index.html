@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="answer">0</div>
+            <div class="action">
+                <input type="button" value="AC" onclick="clearAll()" class="btn">
+                <input type="button" value="/" onclick="operator('/')" class="btn">
+                <input type="button" value="BackSpace" onclick="backspace()" class="btn-bs">
+            </div>
+            <div class="numbers">
+                <div class="horizontal">
+                    <input type="button" value="7" onclick="num(7)" class="btn">
+                    <input type="button" value="8" onclick="num(8)" class="btn">
+                    <input type="button" value="9" onclick="num(9)" class="btn">
+                    <input type="button" value="x" onclick="operator('x')" class="btn">
+                </div>
+                <div class="horizontal">
+                    <input type="button" value="4" onclick="num(4)" class="btn">
+                    <input type="button" value="5" onclick="num(5)" class="btn">
+                    <input type="button" value="6" onclick="num(6)" class="btn">
+                    <input type="button" value="−" onclick="operator('-')" class="btn">
+                </div>
+                <div class="horizontal">
+                    <input type="button" value="1" onclick="num(1)" class="btn">
+                    <input type="button" value="2" onclick="num(2)" class="btn">
+                    <input type="button" value="3" onclick="num(3)" class="btn">
+                    <input type="button" value="+" onclick="operator('+')" class="btn">
+                </div>
+                <div class="horizontal">
+                    <input type="button" value="0" onclick="num(0)" class="btn">
+                    <input type="button" value="^" onclick="operator('^')" class="btn">
+                    <input type="button" value="." onclick="num('.')" class="btn">
+                    <input class="ans" type="button" value="=" onclick="calculate()" class="btn">
+                </div>
+            </div>
+        </div>  
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
